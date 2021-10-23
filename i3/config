@@ -19,6 +19,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +20% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -20% #decrease sound volume
 
+# Run screen-shot tool Flameshot
+bindsym Print exec flameshot gui
+
 # Apps navigation
 mode "gotoapp: [g]oogle, [r]ider" {
     bindsym g [class="chrome"] focus; mode "default"
