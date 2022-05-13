@@ -8,8 +8,9 @@
 # Enable RU keyboard layout
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle"
 
-# Run telegram
+# Autorun
 exec --no-startup-id telegram-desktop -startintray
+exec --no-startup-id skype
 
 # Remove windows title
 for_window [class="^.*"] border pixel 2
