@@ -14,6 +14,9 @@ exec --no-startup-id telegram-desktop -startintray
 # Remove windows title
 for_window [class="^.*"] border pixel 2
 
+# Telegram window floating
+for_window [class="TelegramDesktop"] floating enable, move position center
+
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
